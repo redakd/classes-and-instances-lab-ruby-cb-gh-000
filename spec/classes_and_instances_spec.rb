@@ -20,7 +20,7 @@ describe 'Dog' do
     end
 
     it 'defines a local variable lassie as an instance of a Dog' do
-      lassie = get_variable_from_file("../lib/dog.rb", "lassie")
+      lassie = get_variable_from_file("lib/dog.rb", "lassie")
       expect(lassie).to be_a(Dog)
     end
   end
@@ -28,7 +28,7 @@ end
 
 describe 'Person' do
   it 'is defined within lib/person.rb' do
-    if file_includes_class_definition('../lib/person.rb','Person')
+    if file_includes_class_definition('lib/person.rb','Person')
       expect(defined?(Person)).to be_truthy
       expect(Person).to be_a(Class)
     end
@@ -36,12 +36,12 @@ describe 'Person' do
 
   context 'variables defined in lib/person.rb' do
     it 'defines a local variable adele_goldberg as an instance of a Person' do
-      adele_goldberg = get_variable_from_file("../lib/person.rb", "adele_goldberg")
+      adele_goldberg = get_variable_from_file("lib/person.rb", "adele_goldberg")
       expect(adele_goldberg).to be_a(Person)
     end
 
     it 'defines a local variable alan_kay as an instance of a Person' do
-      alan_kay = get_variable_from_file("../lib/person.rb", "alan_kay")
+      alan_kay = get_variable_from_file("lib/person.rb", "alan_kay")
       expect(alan_kay).to be_a(Person)
     end
   end
