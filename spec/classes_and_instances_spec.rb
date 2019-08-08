@@ -1,5 +1,4 @@
 require 'spec_helper'
-require '../lib/dog.rb'
 require '../lib/person.rb'
 
 describe 'Dog' do
