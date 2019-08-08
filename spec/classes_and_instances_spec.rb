@@ -15,7 +15,7 @@ describe 'Dog' do
     end
 
     it 'defines a local variable snoopy as an instance of a Dog' do
-      snoopy = get_variable_from_file("../lib/dog.rb", "snoopy")
+      snoopy = get_variable_from_file("lib/dog.rb", "snoopy")
       expect(snoopy).to be_a(Dog)
     end
 
